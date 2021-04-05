@@ -7,6 +7,7 @@
 - **Module**
 - **Random**
 - **Lists**
+- **Split**
 
 
 
@@ -32,7 +33,9 @@
    
    #once imported code can be written
    
-   player_age = random.randint(25, 55)
+   player_age = random.randint(25, 55)	#For type integer
+   player_name = random.choice(names)  #For type string
+   
    ```
 
 
@@ -49,4 +52,29 @@
    ```
 
    
+   
+4. **Lists** - Nested lists
 
+   ```python
+   fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
+   vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
+   
+   dirty_dozen = [fruits, vegetables]
+    
+   print(dirty_dozen[1][1])
+   
+   # The first bracketed number pertains to the array in the index
+   # The second bracketed number pertains to the item in the array
+   ```
+
+   
+
+5. **Split** - Split a string into parts
+
+   ```python
+   text = 'Richard, Peter, David'
+   
+   names = text.split(',')
+   ```
+
+   
